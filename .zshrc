@@ -152,5 +152,3 @@ source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 eval "$(zoxide init zsh)"
 
 export PATH=$PATH:/home/kqcl/.spicetify
-
-PATH=~/.console-ninja/.bin:$PATH
