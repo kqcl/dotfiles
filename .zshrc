@@ -150,5 +150,6 @@ source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 #    [ -z "$TMUX" ] && exec tmux
 # esac
 eval "$(zoxide init zsh)"
+eval "$(fzf --zsh)"
 
 export PATH=$PATH:/home/kqcl/.spicetify
