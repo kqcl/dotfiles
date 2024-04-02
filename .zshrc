@@ -119,6 +119,8 @@ alias cd='z'
 
 alias sharky='blahaj -s -c femboy'
 
+alias hyfetch='nf | blahaj'
+
 ex () {
     if [ -f $1 ] ; then
             case $1 in
@@ -146,9 +148,7 @@ ex () {
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
-# case $- in *i*)
-#    [ -z "$TMUX" ] && exec tmux
-# esac
+
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 
