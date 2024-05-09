@@ -111,7 +111,7 @@ alias grep='rg'
 
 alias c='clear'
 
-alias nf='neofetch'
+alias nf='hyfetch'
 
 alias please='sudo $(fc -ln -1)'
 
@@ -119,7 +119,6 @@ alias cd='z'
 
 alias sharky='blahaj -s -c femboy'
 
-alias hyfetch='nf | blahaj'
 
 ex () {
     if [ -f $1 ] ; then

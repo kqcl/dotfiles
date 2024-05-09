@@ -1,50 +1,97 @@
+* {
+  transition: 0.2s;
+}
+
+window {
+	font-family: "FiraCode Nerd Font Mono";
+	font-size: 13px;
+}
+
 window {
     margin: 0px;
-    background-color: #282a36;
-    border-radius: 30px;
-    border: 2px solid #bd93f9;
+    border: 2px solid #cba6f7;
+    /* background-color: rgba(237, 209, 223, 0.5) */
+    background-color: transparent;
+    border-radius: 16px;
 }
 
 #input {
-    margin: 5px;
+    padding: 4px;
+    margin: 20px;
+    padding-left: 20px;
     border: none;
-    color: #FFFFFF;
-    background-color: #44475a;
-    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
+   	outline: none;
+    border-radius: 16px;
+}
+
+#input image {
+    color: #fff;
+}
+
+#input:focus {
+    border: none;
+   	outline: none;
 }
 
 #inner-box {
-    margin: 5px;
+    margin: 20px;
+    margin-top: 0px;
     border: none;
-    background-color: #282a36;
-    border-radius: 30px;
+    color: #cba6f7;
+    border-radius: 16px;
+}
+
+#inner-box * {
+    transition: none;
 }
 
 #outer-box {
-    margin: 15px;
+    margin: 0px;
     border: none;
-    background-color: #282a36;
+    padding: 0px;
+    border-radius: 16px;
 }
 
 #scroll {
-    margin: 0px;
+    margin-top: 5px;
     border: none;
+    border-radius: 16px;
+    margin-bottom: 5px;
+}
+
+#text:selected {
+    color: #fff;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 20px;
+    background: transparent;
 }
 
 #text {
-    margin: 5px;
+    margin: 0px;
     border: none;
-    color: #bd93f9;
-} 
-
-#entry:selected {
-    background-color: #44475a;
-    border-radius: 20px;
-    outline: none;
+    padding: 0px;
+    background: transparent;
 }
 
-#entry:selected * {
-    background-color: #44475a;
-    border-radius: 20px;
+#entry {
+    margin: 0px;
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+    min-height:32px;
+    font-weight: bold;
+}
+
+#entry:selected {
     outline: none;
+    margin: 0px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
 }
