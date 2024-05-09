@@ -102,7 +102,6 @@ alias zshconfig="nvim ~/.zshrc"
 
 alias ls='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group'
 alias l.='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group -d .*'
-alias la=
 alias cat='bat --style=plain'
 
 alias getpid='netstat -nlp | grep'
