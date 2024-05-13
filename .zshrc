@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git auto-notify vi-mode)
+plugins=(git auto-notify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +102,9 @@ alias zshconfig="nvim ~/.zshrc"
 
 alias ls='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group'
 alias l.='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group -d .*'
-alias cat='bat --style=plain'
+
+alias cat='bat'
+# maybe --style plain
 
 alias getpid='netstat -nlp | grep'
 
@@ -110,14 +112,21 @@ alias grep='rg'
 
 alias c='clear'
 
-alias nf='hyfetch'
+alias nf='fastfetch --pipe false | blahaj'
 
-alias please='sudo $(fc -ln -1)'
+alias please='echo doas $(fc -ln -1) && doas $(fc -ln -1)'
 
 alias cd='z'
 
-alias sharky='blahaj -s -c femboy'
+alias sharky='blahaj -s'
 
+alias vi="nvim"
+
+alias sudo="doas"
+
+alias yay="paru"
+
+alias btc="bluetoothctl connect 14:3F:A6:A7:93:E8"
 
 ex () {
     if [ -f $1 ] ; then
@@ -144,10 +153,10 @@ ex () {
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
-
 
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 
 export PATH=$PATH:/home/kqcl/.spicetify
+
+# ~/Documents/coding/shell-scripts/blahaj_say.sh | blahaj

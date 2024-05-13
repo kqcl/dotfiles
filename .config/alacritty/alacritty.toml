@@ -25,6 +25,8 @@ style = "Italic"
 family = "MesloLGL Nerd Font Mono"
 style = "Regular"
 
+# [colors.primary]
+# background = "#2D3A42"
 
 [window]
 opacity = 0.97

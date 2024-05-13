@@ -1,97 +1,55 @@
-* {
-  transition: 0.2s;
+window {
+    margin: 5px;
+    border: 0px solid #444444;
+    background-color: rgba(0, 0, 0, 0.0);
+    /* opacity: 1; */
+    font-family: FontAwesome;
 }
 
-window {
-	font-family: "FiraCode Nerd Font Mono";
-	font-size: 13px;
-}
-
-window {
-    margin: 0px;
-    border: 2px solid #cba6f7;
-    /* background-color: rgba(237, 209, 223, 0.5) */
-    background-color: transparent;
-    border-radius: 16px;
+@keyframes erscheinen {
+    from {opacity: 0;}
+      to {opacity: 1;}
 }
 
 #input {
-    padding: 4px;
-    margin: 20px;
-    padding-left: 20px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
-   	outline: none;
-    border-radius: 16px;
-}
-
-#input image {
-    color: #fff;
-}
-
-#input:focus {
-    border: none;
-   	outline: none;
+    margin: 0px 0px 5px;
+    border: 5px solid #b58900;
+    background-color: rgb(7, 54, 66);
+    border-radius: 20px;
+    color : #fdf6e3;
 }
 
 #inner-box {
-    margin: 20px;
-    margin-top: 0px;
-    border: none;
-    color: #cba6f7;
-    border-radius: 16px;
+    margin: 0px;
+    border: 0px solid #444444;
+    background-color: rgba(68, 68, 68, 0.0);
 }
 
-#inner-box * {
-    transition: none;
-}
+/* #inner-box flowboxchild:nth-child(even) { */
+/*     background-color: #555555; */
+/* } */
 
 #outer-box {
     margin: 0px;
-    border: none;
-    padding: 0px;
-    border-radius: 16px;
+    border: 0px solid rgb(203, 75, 22);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 #scroll {
-    margin-top: 5px;
-    border: none;
-    border-radius: 16px;
-    margin-bottom: 5px;
-}
-
-#text:selected {
-    color: #fff;
-    font-weight: bold;
-}
-
-#img {
-    margin-right: 20px;
-    background: transparent;
+    margin: 0px;
+    border: 5px solid #586e75;
+    border-radius: 0px;
+    background-color: rgba(7, 54, 66, 0.9);
+    /* animation: erscheinen 0.3s linear; */
 }
 
 #text {
-    margin: 0px;
-    border: none;
-    padding: 0px;
-    background: transparent;
+    margin: 1px;
+    border: 0px solid #44AA44;
+    /* background-color: #444444; */
+    color: #FFFFFF;
 }
 
-#entry {
-    margin: 0px;
-    border: none;
-    border-radius: 16px;
-    background-color: transparent;
-    min-height:32px;
-    font-weight: bold;
-}
-
-#entry:selected {
-    outline: none;
-    margin: 0px;
-    border: none;
-    border-radius: 16px;
-    background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
+#selected {
+    background-color: rgb(76, 162, 223);
 }
