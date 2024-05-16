@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
-auth="4t0mic_z8bpkco3tf5pmiww745jicsosdbyyf"
+source ~/dotfiles/.config/hypr/scripts/.env
+
+auth="$API_KEY"
 url="https://api.e-z.host/files"
 
 temp_file="/tmp/screenshot.png"
