@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'Do you want to start Hyprland? (Y/n): '
+echo -n 'Do you want to start Hyprland? (Y/n): '
 
 read -r reaction
 

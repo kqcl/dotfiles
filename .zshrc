@@ -151,12 +151,7 @@ ex () {
  }
 
 
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
-
-export PATH=$PATH:/home/kqcl/.spicetify
-
-# ~/Documents/coding/shell-scripts/blahaj_say.sh | blahaj
